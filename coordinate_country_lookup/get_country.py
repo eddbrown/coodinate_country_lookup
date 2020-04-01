@@ -2,8 +2,13 @@
 # it is
 import geopandas as gpd
 from shapely.geometry import Point, Polygon
+import os
+import coordinate_country_lookup
 
-shapefile = 'countries/ne_110m_admin_0_countries.shp'
+shapefile_dir = os.path.join(os.path.dirname(coordinate_country_lookup.__file__), 'countries')
+shapefile = os.path.join(shapefile_dir, 'ne_110m_admin_0_countries.shp')
+
+# shapefile = '../countries/ne_110m_admin_0_countries.shp'
 gdf = gpd.read_file(shapefile)[['ADMIN', 'ADM0_A3', 'geometry']]
 gdf.columns = ['country', 'country_code', 'geometry']
 
