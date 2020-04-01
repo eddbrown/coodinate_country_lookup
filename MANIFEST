@@ -3,3 +3,4 @@ setup.cfg
 setup.py
 coordinate_country_lookup/__init__.py
 coordinate_country_lookup/get_country.py
+recursive-include data *

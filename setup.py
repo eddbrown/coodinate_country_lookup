@@ -10,5 +10,6 @@ setup(
   url = 'https://github.com/eddbrown/coodinate_country_lookup',   # Provide either the link to your github or to your website
   keywords = ['COORDINATE', 'COUNTRY', 'OFFLINE'],   # Keywords that define your package best
   install_requires=['shapely', 'geopandas'],
+  package_data={'': ['countries/*']},
   include_package_data=True
 )
