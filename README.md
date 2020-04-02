@@ -4,7 +4,7 @@ This package contains a method to return a country given the latitude and longit
 
 
 ```
-pip install pip install coordinate_country_lookup==0.1.6
+pip install coordinate_country_lookup==0.1.6
 ```
 
 Then using it as:
